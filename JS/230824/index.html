@@ -1,0 +1,12 @@
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function oddSum(sum, num) {
+    if (num % 2 === 1) {
+        return sum + num;
+    } 
+    else {
+        return sum;
+    }
+}
+const result = arr.reduce(oddSum, 0);
+console.log(result);
